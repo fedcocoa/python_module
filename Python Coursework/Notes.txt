@@ -1,0 +1,38 @@
+Consists of a number of rallies
+each rally, the player who starts is the server, other is the returner
+a player wins a rally if the other player is unable to make a legal shot
+
+Matches usually play over a number of games
+
+winner being the player who reaches a certain score first
+pro matches played over 5 games, first to win 3 matches
+
+Point A Rally Scoring PARS
+Winner of each rally receives a point (regardless of who serves)
+first player to reach at least 11 or more points and have 2 more than their opponent wins the game
+if the server wins a rally, they stay as server
+if the returner wins a rally, they become the server
+
+English Scoring
+Only the server is awarded a point if they win a rally
+if the server wins a rally, they receive a point and stay serving
+if the returner wins a rally, they serve but don't get a point
+the first player to reach 9 points win unless the score is 8-8
+if the score is 8-8, the player who first reached 8, decides to play to 9 or 10
+
+Player Ability
+Integer value
+0 < rX <= 100
+
+Probability of A winning
+P(A) = rA/(rA + rB)
+
+Y against X
+
+1e)
+
+probabilityWin(ra,ra,n) gives us the probability that a wins any given game against b, call this P(a)
+We want to figure out the probability of a winning n games, call this P(an)
+P(an) = P(a)^n
+
+Playing a match where the player to win n games first wins the match
